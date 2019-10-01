@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="209dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="90dp"
+        android:text="Enter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ground" />
+
+    <Button
+        android:id="@+id/ground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:text="ground"
+        app:layout_constraintStart_toEndOf="@+id/grass"
+        app:layout_constraintTop_toBottomOf="@+id/flying" />
+
+    <Button
+        android:id="@+id/grass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:text="grass"
+        app:layout_constraintStart_toEndOf="@+id/ghost"
+        app:layout_constraintTop_toBottomOf="@+id/fairy" />
+
+    <Button
+        android:id="@+id/ghost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="ghost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fairy" />
+
+    <Button
+        android:id="@+id/flying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:text="flying"
+        app:layout_constraintStart_toEndOf="@+id/fire"
+        app:layout_constraintTop_toBottomOf="@+id/bug" />
+
+    <Button
+        android:id="@+id/fire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:text="fire"
+        app:layout_constraintStart_toEndOf="@+id/fighting"
+        app:layout_constraintTop_toBottomOf="@+id/bug" />
+
+    <Button
+        android:id="@+id/fighting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:text="fighting"
+        app:layout_constraintStart_toEndOf="@+id/fairy"
+        app:layout_constraintTop_toBottomOf="@+id/bug" />
+
+
+    <Button
+        android:id="@+id/fairy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Fairy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bug" />
+
+    <Button
+        android:id="@+id/electric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Electric"
+        app:layout_constraintStart_toEndOf="@+id/dragon"
+        app:layout_constraintTop_toTopOf="@+id/bug" />
+
+    <Button
+        android:id="@+id/dragon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Dragon"
+        app:layout_constraintStart_toEndOf="@+id/dark"
+        app:layout_constraintTop_toTopOf="@+id/bug" />
+
+    <Button
+        android:id="@+id/dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Dark"
+        app:layout_constraintStart_toEndOf="@+id/bug"
+        app:layout_constraintTop_toTopOf="@+id/bug" />
+
+    <Button
+        android:id="@+id/bug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Bug"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/attackEntry" />
+
+    <TextView
+        android:id="@+id/titleCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="240dp"
+        android:text="Search by Category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/titleTextPokemon"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="15dp"-->
+    <!--            android:layout_marginEnd="190dp"-->
+    <!--            android:text="Search by Pokemon Name:"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/searchPageTitle" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/pokeName"-->
+    <!--            android:layout_width="335dp"-->
+    <!--            android:layout_height="43dp"-->
+    <!--            android:layout_marginTop="50dp"-->
+    <!--            android:ems="10"-->
+    <!--            android:hint="Enter Pokemon Name"-->
+    <!--            android:inputType="textPersonName"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/searchPageTitle" />-->
+
+    <TextView
+        android:id="@+id/atkHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:text="ATK >"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleCategory" />
+
+    <EditText
+        android:id="@+id/attackEntry"
+        android:layout_width="54dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="value"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/atkHeader"
+        app:layout_constraintTop_toBottomOf="@+id/titleCategory" />
+
+    <TextView
+        android:id="@+id/defHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:text="Def >"
+        app:layout_constraintStart_toEndOf="@+id/attackEntry"
+        app:layout_constraintTop_toBottomOf="@+id/titleCategory" />
+
+    <EditText
+        android:id="@+id/defEntry"
+        android:layout_width="54dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="value"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/defHeader"
+        app:layout_constraintTop_toBottomOf="@+id/titleCategory" />
+
+    <TextView
+        android:id="@+id/hpHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:text="HP >"
+        app:layout_constraintStart_toEndOf="@+id/defEntry"
+        app:layout_constraintTop_toBottomOf="@+id/titleCategory" />
+
+    <EditText
+        android:id="@+id/hpEntry"
+        android:layout_width="54dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="value"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/hpHeader"
+        app:layout_constraintTop_toBottomOf="@+id/titleCategory" />
+
+
+</android.support.constraint.ConstraintLayout>
